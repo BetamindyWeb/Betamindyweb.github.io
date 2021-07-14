@@ -10,20 +10,9 @@
         body {
             background: linear-gradient(45deg, skyblue, royalblue);
         }
-        aside {
-            width: 210px;
-            height: 450px;
-            border: 2px pink;
-            border-radius: 5px;
-            position: fixed;
-            top: 8px;
-            left: 8px;
-            padding: 0 auto;
-            background: linear-gradient(45deg, white, pink);
-            background-color: white;
-        }
         .main {
-            width: 800px;
+            width: 55%;
+            max-width: 55%;
             height: 1300px;
             border: 3px solid black;
             border-radius: 10px;
@@ -32,24 +21,61 @@
             background-color: white;
         }
         .mainfont {
-            font-size: 19px;
+            font-size: 1.18em; /* 약 19픽셀. em = px / 16. 글자 크기에만 관여함 */
             color: black;
         }
         .sidefont {
-            font-size: 16px;
+            font-size: 1em;
             color: royalblue;
         }
         .link:hover {
-            font-size: 18px;
+            font-size: 1.125em; /* 18픽셀 */
             background-color: gold;
         }
         .sidelink:hover {
-            font-size: 16px;
+            font-size: 1em;
             background-color: gold;
+        }
+        aside {
+            width: 17%;
+            max-width: 17%;
+            height: 400px;
+            border: 2px pink;
+            border-radius: 5px;
+            position: fixed;
+            top: 70px;
+            left: 8px;
+            padding: 0 auto;
+            background: linear-gradient(45deg, white, pink);
+            background-color: white;
+        }
+        details {
+            margin-bottom: 1rem;
+        }
+        details > summary {
+            background: rgba(150, 255, 150);
+            width: 9%;
+            max-width: 9%;
+            padding: 1rem;
+            outline: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.5s;
+            position: fixed;
         }
     </style>
 </head>
 <body oncontextmenu="return false" ondragstart="return false">
+<details>
+<summary>다른 모드</summary>
+    <aside>
+        <ul>
+            <li>📂다른 모드</li>
+            <a href="https://github.com/sk7725/Commandblocks" class="sidelink">CommandBlocks (v5)</a>
+            <a href="https://github.com/sk7725/testers" class="sidelink">Testers</a>
+        </ul>
+    </aside>
+</details>
 <div class="main">
     <img src="background_img.png" width="700" height="370"><br><br>
     <p class="mainfont">이 모드는 5.0 커맨드모드의 후속작입니다<br>
@@ -68,11 +94,5 @@
     <br><br>
     <a href="https://github.com/sk7725/BetaMindy" class="link">깃허브 다운로드</a>
 </div>
-<aside>
-    <ul>
-        <li>📂다른 모드</li>
-        <a href="https://github.com/sk7725/Commandblocks" class="sidelink">CommandBlocks (v5)</a>
-        <a href="https://github.com/sk7725/testers" class="sidelink">Testers</a>
-    </ul>
-</aside>
+
 </body>
