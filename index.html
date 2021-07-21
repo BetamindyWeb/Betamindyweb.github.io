@@ -11,8 +11,8 @@
             background: linear-gradient(45deg, skyblue, royalblue);
         }
         .main {
-            width: 55%;
-            max-width: 55%;
+            width: 70%;
+            max-width: 70%;
             height: 1300px;
             border: 3px solid black;
             border-radius: 10px;
@@ -63,6 +63,13 @@
             transition: background 0.5s;
             position: fixed;
         }
+        .youtube {
+            overflow-x: scroll; 
+            height: 525px; 
+            width: 90%; 
+            white-space: nowrap;
+            clear: both;
+        }
     </style>
 </head>
 <body oncontextmenu="return false" ondragstart="return false">
@@ -73,25 +80,30 @@
             <li><a href="https://github.com/sk7725/Commandblocks" class="sidelink">CommandBlocks (v5)</a></li>
             <li><a href="https://github.com/sk7725/testers" class="sidelink">Testers</a></li>
             <li><a href="https://github.com/FreezeMandu/routertexturepack" class="sidelink">Router Texture Pack</a></li>
+            <li><a href="https://github.com/FreezeMandu/invisibleblocks" class="sidelink">Invisible Blocks (texture)</a></li>
         </ui>
     </aside>
 </details>
 <div class="main">
-    <img src="background_img.png" width="700" height="370"><br><br>
+    <img src="background_img.png" width="90%" height="370"><br><br>
     <p class="mainfont">이 모드는 5.0 커맨드모드의 후속작입니다<br>
     자바 모드라서 5.0때보다 더 다양하고 재밌는 콘텐츠를 즐길 수 있다는것이 특징입니다!<br>
     옆동네에서 프로젝트 유니티도 함께 개발중입니다.</p>
     <p class="sidefont">혼돈의 카오스의 모드!</p>
     <br>
     <p style="font-size: 16px;">💛베타민디 1.0 트레일러💛</p>
-    <iframe width="700" 
-    height="400" 
-    src="https://www.youtube.com/embed/pCkWK9Wrpr0" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
-    <br><br>
+        <div class="youtube">
+        <div style="display: inline-block;">
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/pCkWK9Wrpr0" title="BetaMindy 1.0 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div style="display: inline-block; clear: both;">
+            <iframe width="896px" height="500px"src="https://www.youtube.com/embed/PjiGSvQua34" title="BetaMindy Showcase 1/3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div style="display: inline-block; clear: both;">    
+            <iframe width="896px" height="500px" src="https://www.youtube.com/embed/1KajDWQkCCA" title="BetaMindy Showcase 2/3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        <br><br>
     <a href="https://github.com/sk7725/BetaMindy" class="link">깃허브 다운로드</a>
 </div>
 
